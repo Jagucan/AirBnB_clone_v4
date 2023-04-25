@@ -2,7 +2,7 @@ $(function() {
     $('input').css('margin-right', '10px');
     const dic = [];
     $(':checkbox').change(function () {
-        if (this.checked) {
+        if ((this).prop("checked") == true) {
             dic.push($(this).attr("data-id"));
         } else {
             dic.pop($(this).attr("data-id"));
@@ -10,7 +10,7 @@ $(function() {
     });
     const name = [];
     $(':checkbox').change(function () {
-        if (this.checked) {
+        if ((this).prop("checked") == true) {
             name.push($(this).attr("data-name"));
         } else {
             name.pop($(this).attr("data-name"));

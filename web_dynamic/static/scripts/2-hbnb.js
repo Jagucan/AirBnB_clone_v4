@@ -22,10 +22,10 @@ $(function () {
     }
   });
   $.get('http://0.0.0.0:5001/api/v1/status/', function (data) {
-    if (data.status === 'ok') {
-      $('DIV#api_status').addClass('available');
+    if (data.status === 'OK') {
+      $('div#api_status').addClass('available');
     } else {
-      $('DIV#api_status').removeClass('available');
+      $('div#api_status').removeClass('available');
     }
   });
 });
